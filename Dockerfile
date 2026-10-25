@@ -19,7 +19,7 @@ RUN curl -fsSL -o /tmp/orca.AppImage \
     && mv /opt/squashfs-root /opt/orca \
     && rm -f /tmp/orca.AppImage
 
-RUN useradd -m -u 1000 -s /bin/bash orca \
+RUN useradd -m -u 1001 -s /bin/bash orca \
     && mkdir -p /home/orca/.config /home/orca/.cache \
     && chown -R orca:orca /home/orca
 
